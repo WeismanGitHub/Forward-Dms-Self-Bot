@@ -2,5 +2,8 @@
   "dependencies": {
     "discord.js-selfbot-v13": "^2.6.12",
     "dotenv": "^16.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
