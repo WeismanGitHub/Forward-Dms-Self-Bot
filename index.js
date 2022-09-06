@@ -1,6 +1,14 @@
 const { Client } = require('discord.js-selfbot-v13');
+const express = require('express');
 const client = new Client();
 require('dotenv').config();
+
+const app = express();
+const port = 5000;
+
+//The reason for making it a web app is because replit requires that.
+app.get('/', (req, res) => res.send('Hall of Fame Bot is online.'));
+app.listen(port, () => console.log(`Started!`));
 
 client.on('ready', async () => {
     console.log(`${client.user.username} is ready!`);
